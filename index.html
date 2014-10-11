@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ngMadLibs</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+
+        <style>
+            .row {
+                background-color:#eee;
+                border: 1px solid #888;
+                border-radius:3px;
+            }
+            .border-right { border-right: 1px solid #888; }
+            .pad-this     { padding: 20px; }
+            .value        { text-decoration: underline; }
+        </style>
+    </head>
+    <body ng-app="">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 border-right"><img src="assets/images/mad-lib-happy-face.png" /></div>
+                <div class="col-md-8"><img src="assets/images/ng-mad-libs-logo.png" /><h1>Automate This!</h1></div>
+            </div>
+            <div class="row text-center pad-this" ng-init="male_name='male name';dirty_task='Dirty task';obn_celeb='Obnoxious celebrity';job_title='Job title';celeb='Celebrity';huge_number='Huge number'; tedious_task='Tedious task';useless_skill='Useless skill';adjective='Adjective';">
+                <div class="col-md-12">
+                    <p>Provide the following words:</p>
+                    <p>
+                        <input type="text" ng-model="male_name" placeholder="male name" />
+                        <input type="text" ng-model="dirty_task" placeholder="Dirty task" />
+                        <input type="text" ng-model="obn_celeb" placeholder="Obnoxious celebrity" />
+                    </p>
+                    <p>
+                        <input type="text" ng-model="job_title" placeholder="Job title" />
+                        <input type="text" ng-model="celeb" placeholder="Celebrity" />
+                        <input type="text" ng-model="huge_number" placeholder="Huge number" />
+                    </p>
+                    <p>
+                        <input type="text" ng-model="tedious_task" placeholder="Tedious task" />
+                        <input type="text" ng-model="useless_skill" placeholder="Useless skill" />
+                        <input type="text" ng-model="adjective" placeholder="Adjective" />
+                    </p>
+                </div>
+            </div>
+            <div class="row pad-this">
+                <div class="col-md-12">
+                    <p><span class="value">{{male_name}}</span> was a <span class="value">{{job_title}}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span class="value">{{tedious_task}}</span> and <span class="value">{{dirty_task}}</span>. So, <span class="value">{{male_name}}</span> met with her life mentor <span class="value">{{celeb}}</span> who told her to learn how to <span class="value">{{useless_skill}}</span> with Thinkful. Thinkful didn't offer a course on <span class="value">{{useless_skill}}</span> so she studied programming instead.</p>
+ 
+                    <p>What a great decision! With her new skills, <span class="value">{{male_name}}</span> built a(n) <span class="value">{{adjective}}</span> robot named <span class="value">{{obn_celeb}}</span> that not only loved <span class="value">{{dirty_task}}</span> but did it <span class="value">{{huge_number}}</span> faster.</p>
+                </div>
+            </div>
+        </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+</html>
