@@ -1,11 +1,13 @@
 /**
  * MadLibs Words
 */
-(function() {
+(function () {
+  'use strict';
+  
   angular.module('app').controller('wordsController', wordsController);
   
-  function wordsController ($scope) {
-    $scope.male_name      = 'male name'
+  function wordsController($scope) {
+    $scope.male_name      = 'male name';
     $scope.dirty_task     = 'Dirty task';
     $scope.obn_celeb      = 'Obnoxious celebrity';
     $scope.job_title      = 'Job title';
@@ -15,4 +17,4 @@
     $scope.useless_skill  = 'Useless skill';
     $scope.adjective      = 'Adjective';
   }
-})();
+}());
