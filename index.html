@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
     <head>
         <meta charset="utf-8">
         <title>ngMadLibs</title>
@@ -16,13 +16,13 @@
             .value        { text-decoration: underline; }
         </style>
     </head>
-    <body ng-app="">
-        <div class="container">
+    <body>
+        <div class="container" ng-controller="wordsController">
             <div class="row text-center">
                 <div class="col-md-4 border-right"><img src="assets/images/mad-lib-happy-face.png" /></div>
                 <div class="col-md-8"><img src="assets/images/ng-mad-libs-logo.png" /><h1>Automate This!</h1></div>
             </div>
-            <div class="row text-center pad-this" ng-init="male_name='male name';dirty_task='Dirty task';obn_celeb='Obnoxious celebrity';job_title='Job title';celeb='Celebrity';huge_number='Huge number'; tedious_task='Tedious task';useless_skill='Useless skill';adjective='Adjective';">
+            <div class="row text-center pad-this">
                 <div class="col-md-12">
                     <p>Provide the following words:</p>
                     <p>
@@ -53,4 +53,5 @@
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <script src="scripts/controllers/wordsController.js"></script>
 </html>
