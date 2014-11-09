@@ -82,6 +82,7 @@
   to { opacity:1; }
 }
 
+.panel-input.ng-hide-remove,
 .panel-input.ng-enter {
   /* notice how we're using animation instead of transition here */ 
   -webkit-animation-delay:0.5s;
